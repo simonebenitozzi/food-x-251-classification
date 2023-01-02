@@ -1,0 +1,4 @@
+papers/*
+train/*
+val/*
+val_degraded/*
