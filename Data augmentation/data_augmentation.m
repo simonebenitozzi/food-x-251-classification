@@ -7,8 +7,8 @@ rng(42)
 %% importazione immagini
 train_data_files = importdata('G:\Progetto VIPM\annot\train_info.csv');
 test_data_files = importdata('G:\Progetto VIPM\annot\val_info.csv');
-%N_TEST = size(test_data_files.data,1);
-N_TEST = 20;
+N_TEST = size(test_data_files.data,1);
+%N_TEST = 20;
 
 tic
 test_images = {};
