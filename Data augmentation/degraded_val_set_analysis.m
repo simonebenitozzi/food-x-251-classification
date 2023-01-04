@@ -7,8 +7,8 @@ rng(42)
 %% importazione immagini
 train_data_files = importdata('G:\Progetto VIPM\annot\train_info.csv');
 test_data_files = importdata('G:\Progetto VIPM\annot\val_info.csv');
-%N_TEST = size(test_data_files.data,1);
-N_TEST = 10;
+N_TEST = size(test_data_files.data,1);
+%N_TEST = 10;
 
 tic
 test_images = {};
@@ -59,9 +59,9 @@ for ii=1:N_TEST
     [im_deg_new,im_deg,gauss_var]=trova_rumore_gaussiano(im_deg_new,im_deg,1);
     row={im_name,sigma,wR,wG,wB,gamma,exp_val,gauss_var,im_class};
     data_table=[data_table; row];
-    montage({im_deg,im_deg_new})
-    title('Immagine degradata originale vs. Immagine degradata nuova');
-    saveas(gcf,'./test'+string(ii)+'.jpg');
+    %montage({im_deg,im_deg_new})
+    %title('Immagine degradata originale vs. Immagine degradata nuova');
+    %saveas(gcf,'./test'+string(ii)+'.jpg');
     filename='.\output\new_'+string(im_name);
     filename=string(pwd)+'\output\new_'+string(im_name);
     if exist(filename, 'file')
