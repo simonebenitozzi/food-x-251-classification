@@ -11,14 +11,10 @@ data_val_degraded=sortrows(data_val_degraded,'class','ascend');
 
 
 %% recupero lista immagini train set
-train_data_files = importdata('G:\Progetto VIPM\annot\train_info.csv');
-test_data_files = importdata('G:\Progetto VIPM\annot\val_info.csv');
+train_data_files = importdata('..\annot\train_clean_info.csv');
+test_data_files = importdata('..\annot\val_info.csv');
 N_TRAIN = size(train_data_files.data,1);
 %N_TRAIN = 20;
-
-
-% RICORDATI DI TOGLIERE LE IMMAGINI NON CORRETTE
-
 
 train_gt=[];
 train_names=[];
@@ -38,8 +34,7 @@ data_train=sortrows(data_train,'class','ascend');
 
 
 %% Calcolo distribuzione classi in train e test set
-
-class_list = importdata('G:\Progetto VIPM\annot\class_list.txt');
+class_list = importdata('..\annot\class_list.txt');
 class_list = split(class_list);
 
 class_list_train = class_list;
@@ -75,13 +70,15 @@ end
 
 
 %% riproduzione difetti sul train set
-
 if ~exist('new_train_set', 'dir')
    mkdir('new_train_set');
 end
 
 count=0;
-for ii=1:2 %numero di classi
+for ii=1:251 %numero di classi
+    testo="Classe: " + ii;
+    disp(testo);
+
     n_train_for_a_class=class_list_train{ii,3};
     n_test_for_a_class=class_list_test{ii,3};
     
@@ -100,7 +97,7 @@ for ii=1:2 %numero di classi
         else
             index_test=u_test(modulo);
         end
-        filename=string('G:\Progetto VIPM\train\train_set\'+string(data_train{index_train,1}));
+        filename=string('..\train\train_set\'+string(data_train{index_train,1}));
         im=imread(filename);
         sigma_value=data_val_degraded{index_test,2};
         wR=data_val_degraded{index_test,3};
@@ -122,12 +119,6 @@ for ii=1:2 %numero di classi
         imwrite(im,filename);     
     end
 end
-
-%%
-
-%u = find(data_train{:,2}==0);
-%u_test = find(data_val_degraded{:,9}==0);
-mod(56,55)
 
 
 
