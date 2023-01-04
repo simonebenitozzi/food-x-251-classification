@@ -1,4 +1,4 @@
-function [im_deg_new,im_deg,best_gamma] = applica_gamma(im_deg_new,im_deg,quality_metric)
+function [im_deg_new,im_deg,best_gamma] = trova_gamma(im_deg_new,im_deg,quality_metric)
 
     if quality_metric==0
         BRI=[];

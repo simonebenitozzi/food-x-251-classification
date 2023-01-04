@@ -1,4 +1,4 @@
-function [im_deg_new,im_deg,i_wR,i_wG,i_wB] = color_constancy(im_deg_new,im_deg)
+function [im_deg_new,im_deg,i_wR,i_wG,i_wB] = trova_white_balance(im_deg_new,im_deg)
 
     addpath(genpath(pwd))
 
@@ -26,19 +26,19 @@ function [im_deg_new,im_deg,i_wR,i_wG,i_wB] = color_constancy(im_deg_new,im_deg)
     %disp(PSNR);
 
     % gray world
-    [wR,wG,wB,out]=general_cc_truncated(double(im_deg),0,1,0,-1);
-    im_tmp = double(im_deg_new);
-    im_tmp(:,:,1) = im_deg_new(:,:,1)*(wR*sqrt(3));
-    im_tmp(:,:,2) = im_deg_new(:,:,2)*(wG*sqrt(3));
-    im_tmp(:,:,3) = im_deg_new(:,:,3)*(wB*sqrt(3));
-    im_tmp = uint8(im_tmp);
-    BRI = brisque(im_tmp);
-    BRI_cc=[BRI_cc; BRI];
-    PSNR = psnr(im_deg,im_tmp);
-    PSNR_cc=[PSNR_cc; PSNR];
-    wR_cc=[wR_cc; wR];
-    wG_cc=[wG_cc; wG];
-    wB_cc=[wB_cc; wB];
+    %[wR,wG,wB,out]=general_cc_truncated(double(im_deg),0,1,0,-1);
+    %im_tmp = double(im_deg_new);
+    %im_tmp(:,:,1) = im_deg_new(:,:,1)*(wR*sqrt(3));
+    %im_tmp(:,:,2) = im_deg_new(:,:,2)*(wG*sqrt(3));
+    %im_tmp(:,:,3) = im_deg_new(:,:,3)*(wB*sqrt(3));
+    %im_tmp = uint8(im_tmp);
+    %BRI = brisque(im_tmp);
+    %BRI_cc=[BRI_cc; BRI];
+    %PSNR = psnr(im_deg,im_tmp);
+    %PSNR_cc=[PSNR_cc; PSNR];
+    %wR_cc=[wR_cc; wR];
+    %wG_cc=[wG_cc; wG];
+    %wB_cc=[wB_cc; wB];
     %disp(PSNR);
 
     % shades of gray

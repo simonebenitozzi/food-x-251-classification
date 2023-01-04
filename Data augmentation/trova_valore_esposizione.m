@@ -1,4 +1,4 @@
-function [im_deg_new,im_deg,best_value] = distorci_esposizione(im_deg_new,im_deg,quality_metric)
+function [im_deg_new,im_deg,best_value] = trova_valore_esposizione(im_deg_new,im_deg,quality_metric)
 
      if quality_metric==0
         BRI=[];

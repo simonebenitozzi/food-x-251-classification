@@ -1,4 +1,4 @@
-function [im_deg_new,im_deg,best_gauss_var] = applica_rumore_gaussiano(im_deg_new,im_deg,quality_metric)
+function [im_deg_new,im_deg,best_gauss_var] = trova_rumore_gaussiano(im_deg_new,im_deg,quality_metric)
     
     im_deg_double=double(im_deg);
     nlevel = NoiseLevel(im_deg_double);
