@@ -33,5 +33,8 @@ BRI_im1=brisque(im1);
 BRI_im2=brisque(im2);
 BRI_im_deg=brisque(im_deg);
 
-montage({im_deg,im1,im2})
+subplot(1,3,1), imshow(im_deg)
+subplot(1,3,2), imshow(im1)
 title('Immagine degradata originale vs. Immagine degradata exp vs. Immagine degradata senza exp');
+subplot(1,3,3), imshow(im2)
+

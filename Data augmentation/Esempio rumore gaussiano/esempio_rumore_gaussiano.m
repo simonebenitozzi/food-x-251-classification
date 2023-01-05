@@ -4,7 +4,7 @@ close all
 rng(42)
 
 %% prova stima qualità immagini con rumore gaussiano
-im1 = imread('G:\Progetto VIPM\val\val_set\val_000473.jpg');
+im1 = imread('..\..\val\val_set\val_000473.jpg');
 im2 = imnoise(im1,'gaussian',0.0,0.05);
 
 PSNR=[];
