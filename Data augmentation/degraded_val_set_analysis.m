@@ -2,13 +2,14 @@ clear all
 clc
 close all
 rng(42)
+addpath(genpath(pwd))
 
 
 %% importazione immagini
-train_data_files = importdata('G:\Progetto VIPM\annot\train_info.csv');
-test_data_files = importdata('G:\Progetto VIPM\annot\val_info.csv');
-N_TEST = size(test_data_files.data,1);
-%N_TEST = 10;
+train_data_files = importdata('..\annot\train_clean_info.csv');
+test_data_files = importdata('..\annot\val_info.csv');
+%N_TEST = size(test_data_files.data,1);
+N_TEST = 10;
 
 tic
 test_images = {};
@@ -44,6 +45,7 @@ if ~exist('output', 'dir')
    mkdir('output');
 end
 
+tic
 for ii=1:N_TEST
     row={};
     im_orig=test_images{ii,1};
@@ -53,27 +55,30 @@ for ii=1:N_TEST
     [im_deg_new,im_deg,sigma]=trova_filtro_gaussiano(im_orig,im_deg,0);
     %[im_deg_new,im_deg]=color_transfer(im_deg_new,im_deg);
     [im_deg_new,im_deg,wR,wG,wB]=trova_white_balance(im_deg_new,im_deg);
-    [im_deg_new,im_deg,gamma]=trova_gamma(im_deg_new,im_deg,1);
-    [im_deg_new,im_deg,exp_val]=trova_valore_esposizione(im_deg_new,im_deg,2);
+    [im_deg_new,im_deg,gamma]=trova_gamma(im_deg_new,im_deg,2);
+    %[im_deg_new,im_deg,exp_val]=trova_valore_esposizione(im_deg_new,im_deg,0);
     %[im_deg_new,im_deg,sat_val]=trova_saturazione(im_deg_new,im_deg,0);
-    [im_deg_new,im_deg,gauss_var]=trova_rumore_gaussiano(im_deg_new,im_deg,1);
+    [im_deg_new,im_deg,gauss_var]=trova_rumore_gaussiano(im_deg_new,im_deg,0);
+
+    exp_val = 0;
+
     row={im_name,sigma,wR,wG,wB,gamma,exp_val,gauss_var,im_class};
     data_table=[data_table; row];
-    %montage({im_deg,im_deg_new})
-    %title('Immagine degradata originale vs. Immagine degradata nuova');
-    %saveas(gcf,'./test'+string(ii)+'.jpg');
+    montage({im_deg,im_deg_new})
+    title('Immagine degradata originale vs. Immagine degradata nuova');
+    saveas(gcf,'./test'+string(ii)+'.jpg');
     filename='.\output\new_'+string(im_name);
-    filename=string(pwd)+'\output\new_'+string(im_name);
-    if exist(filename, 'file')
-        delete(filename)        
-    end
-    imwrite(im_deg_new,filename);
-    if rem(ii,100)==0
-        disp(ii);
-        writetable(data_table,'dati_val_degraded.csv');
-    end
-
+    %filename=string(pwd)+'\output\new_'+string(im_name);
+    %if exist(filename, 'file')
+    %    delete(filename)        
+    %end
+    %imwrite(im_deg_new,filename);
+    %if rem(ii,100)==0
+    %    disp(ii);
+    %    writetable(data_table,'dati_val_degraded.csv');
+    %end
 end
+toc
 
 
 %% scrittura dati su CSV
