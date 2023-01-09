@@ -23,7 +23,6 @@ function [im_deg_new,im_deg,i_wR,i_wG,i_wB] = trova_white_balance(im_deg_new,im_
     %wR_cc=[wR_cc; wR];
     %wG_cc=[wG_cc; wG];
     %wB_cc=[wB_cc; wB];
-    %disp(PSNR);
 
     % gray world
     %[wR,wG,wB,out]=general_cc_truncated(double(im_deg),0,1,0,-1);
@@ -39,7 +38,6 @@ function [im_deg_new,im_deg,i_wR,i_wG,i_wB] = trova_white_balance(im_deg_new,im_
     %wR_cc=[wR_cc; wR];
     %wG_cc=[wG_cc; wG];
     %wB_cc=[wB_cc; wB];
-    %disp(PSNR);
 
     % shades of gray
     [wR,wG,wB,out]=general_cc_truncated(double(im_deg),0,5,0,-1);
@@ -55,7 +53,6 @@ function [im_deg_new,im_deg,i_wR,i_wG,i_wB] = trova_white_balance(im_deg_new,im_
     wR_cc=[wR_cc; wR];
     wG_cc=[wG_cc; wG];
     wB_cc=[wB_cc; wB];
-    %disp(BRI);
 
     % general gray world
     [wR,wG,wB,out]=general_cc_truncated(double(im_deg),0,5,2,-1);
@@ -71,7 +68,6 @@ function [im_deg_new,im_deg,i_wR,i_wG,i_wB] = trova_white_balance(im_deg_new,im_
     wR_cc=[wR_cc; wR];
     wG_cc=[wG_cc; wG];
     wB_cc=[wB_cc; wB];
-    %disp(BRI);
 
     % gray edge (1st order)
     [wR,wG,wB,out]=general_cc_truncated(double(im_deg),1,5,2,-1);
@@ -87,7 +83,6 @@ function [im_deg_new,im_deg,i_wR,i_wG,i_wB] = trova_white_balance(im_deg_new,im_
     wR_cc=[wR_cc; wR];
     wG_cc=[wG_cc; wG];
     wB_cc=[wB_cc; wB];
-    %disp(BRI);
 
     % gray edge (2nd order)
     [wR,wG,wB,out]=general_cc_truncated(double(im_deg),2,5,2,-1);
@@ -103,7 +98,6 @@ function [im_deg_new,im_deg,i_wR,i_wG,i_wB] = trova_white_balance(im_deg_new,im_
     wR_cc=[wR_cc; wR];
     wG_cc=[wG_cc; wG];
     wB_cc=[wB_cc; wB];
-    %disp(BRI);
 
     % calcolo coefficienti migliori
     BRI_cc = abs(BRI_cc - BRI_deg);    

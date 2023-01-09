@@ -21,8 +21,6 @@ function [im_deg_new,im_deg,best_sigma] = trova_filtro_gaussiano(im_deg_new,im_d
             u=u(1); % per più elementi minimi
             best_sigma=sigma(u);
             im_deg_new = imgaussfilt(im_deg_new,best_sigma);
-            %testo=["best sigma: ", best_sigma];
-            %disp(testo)
         elseif quality_metric==1
             PSNR=[];
             sigma=[];
@@ -36,8 +34,6 @@ function [im_deg_new,im_deg,best_sigma] = trova_filtro_gaussiano(im_deg_new,im_d
             u=u(1); % per più elementi massimi
             best_sigma=sigma(u);
             im_deg_new = imgaussfilt(im_deg_new,best_sigma);
-            %testo=["best sigma: ", best_sigma];
-            %disp(testo)
         elseif quality_metric==2
             SSIM=[];
             sigma=[];
@@ -51,9 +47,8 @@ function [im_deg_new,im_deg,best_sigma] = trova_filtro_gaussiano(im_deg_new,im_d
             u=u(1); % per più elementi massimi
             best_sigma=sigma(u);
             im_deg_new = imgaussfilt(im_deg_new,best_sigma);
-            %testo=["best sigma: ", best_sigma];
-            %disp(testo)
         end
+        
     end
 
 end

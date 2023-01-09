@@ -21,8 +21,6 @@ function [im_deg_new,im_deg,best_gauss_var] = trova_rumore_gaussiano(im_deg_new,
             u=u(1); 
             best_gauss_var=gauss_var(u);
             im_deg_new = imnoise(im_deg_new,'gaussian',0.0,best_gauss_var);
-            %testo=["best gauss var: ", best_gauss_var];
-            %disp(testo)
         elseif quality_metric==1
             PIQE=[];
             gauss_var = [];
@@ -38,8 +36,6 @@ function [im_deg_new,im_deg,best_gauss_var] = trova_rumore_gaussiano(im_deg_new,
             u=u(1); 
             best_gauss_var=gauss_var(u);
             im_deg_new = imnoise(im_deg_new,'gaussian',0.0,best_gauss_var);
-            %testo=["best gauss var: ", best_gauss_var];
-            %disp(testo)
         elseif quality_metric==2
             PSNR=[];
             gauss_var = [];
@@ -53,8 +49,6 @@ function [im_deg_new,im_deg,best_gauss_var] = trova_rumore_gaussiano(im_deg_new,
             u=u(1); % per più elementi massimi
             best_gauss_var=gauss_var(u);
             im_deg_new = imnoise(im_deg_new,'gaussian',0.0,best_gauss_var);
-            %testo=["best gauss var: ", best_gauss_var];
-            %disp(testo)
         elseif quality_metric==3
             SSIM=[];
             gauss_var = [];
@@ -68,10 +62,8 @@ function [im_deg_new,im_deg,best_gauss_var] = trova_rumore_gaussiano(im_deg_new,
             u=u(1); % per più elementi massimi
             best_gauss_var=gauss_var(u);
             im_deg_new = imnoise(im_deg_new,'gaussian',0.0,best_gauss_var);
-            %testo=["best gauss var: ", best_gauss_var];
-            %disp(testo)
         end
-
+        
     end
 
 end

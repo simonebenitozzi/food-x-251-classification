@@ -2,11 +2,11 @@ clear all
 clc
 close all
 rng(42)
+addpath(genpath(pwd))
 
 
 %% lettura dati da CSV
 data_val_degraded=readtable('dati_val_degraded.csv');
-
 data_val_degraded=sortrows(data_val_degraded,'class','ascend');
 
 
@@ -81,13 +81,8 @@ for ii=1:251 %numero di classi
 
     n_train_for_a_class=class_list_train{ii,3};
     n_test_for_a_class=class_list_test{ii,3};
-    
-    %prendi tutte le immagini della classe ii nel train set
-    %prendi tutti i dati delle immagini della classe ii nel test set
-    %applica i dati del test al train set con indicizzazione j%n_test_for_a_class  
-
     u_train = find(data_train{:,2}==ii-1);
-    u_test = find(data_val_degraded{:,9}==ii-1);
+    u_test = find(data_val_degraded{:,8}==ii-1);
 
     for jj=1:n_train_for_a_class
         index_train=u_train(jj);
@@ -104,12 +99,10 @@ for ii=1:251 %numero di classi
         wG=data_val_degraded{index_test,4};
         wB=data_val_degraded{index_test,5};
         gamma_value=data_val_degraded{index_test,6};
-        exp_value=data_val_degraded{index_test,7};
-        gauss_var=data_val_degraded{index_test,8};
+        gauss_var=data_val_degraded{index_test,7};
         [im]=applica_filtro_gaussiano(im,sigma_value);
         [im]=applica_white_balance(im,wR,wG,wB);
         [im]=applica_gamma(im,gamma_value);
-        [im]=applica_valore_esposizione(im,exp_value);
         [im]=applica_rumore_gaussiano(im,gauss_var);
 
         filename=string(pwd)+'\new_train_set\new_'+string(data_train{index_train,1});

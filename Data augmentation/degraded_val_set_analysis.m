@@ -30,13 +30,12 @@ wR_list=[];
 wG_list=[];
 wB_list=[];
 gamma_list=[];
-exp_val_list=[];
 gauss_var_list=[];
 classes=[];
-variable_names={'image','sigma','wR','wG','wB','gamma','exposure_value',...
+variable_names={'image','sigma','wR','wG','wB','gamma',...
     'gaussian_variance','class'};
 data_table=table(im_names,sigma_list,wR_list,wG_list,wB_list,gamma_list, ...
-    exp_val_list,gauss_var_list,classes,'VariableNames',variable_names);
+    gauss_var_list,classes,'VariableNames',variable_names);
 writetable(data_table,'dati_val_degraded.csv');
 
 
@@ -53,21 +52,17 @@ for ii=1:N_TEST
     im_name=test_data_files.rowheaders{ii,1};
     im_class=test_gt{ii,1};
     [im_deg_new,im_deg,sigma]=trova_filtro_gaussiano(im_orig,im_deg,0);
-    %[im_deg_new,im_deg]=color_transfer(im_deg_new,im_deg);
     [im_deg_new,im_deg,wR,wG,wB]=trova_white_balance(im_deg_new,im_deg);
     [im_deg_new,im_deg,gamma]=trova_gamma(im_deg_new,im_deg,2);
-    %[im_deg_new,im_deg,exp_val]=trova_valore_esposizione(im_deg_new,im_deg,0);
-    %[im_deg_new,im_deg,sat_val]=trova_saturazione(im_deg_new,im_deg,0);
     [im_deg_new,im_deg,gauss_var]=trova_rumore_gaussiano(im_deg_new,im_deg,0);
-
-    exp_val = 0;
-
-    row={im_name,sigma,wR,wG,wB,gamma,exp_val,gauss_var,im_class};
+    row={im_name,sigma,wR,wG,wB,gamma,gauss_var,im_class};
     data_table=[data_table; row];
-    montage({im_deg,im_deg_new})
-    title('Immagine degradata originale vs. Immagine degradata nuova');
+    subplot(1,3,1), imshow(im_orig)
+    subplot(1,3,2), imshow(im_deg)
+    title('Immagine pulita originale vs. Immagine degradata originale vs. Immagine degradata nuova');
+    subplot(1,3,3), imshow(im_deg_new)
     saveas(gcf,'./test'+string(ii)+'.jpg');
-    filename='.\output\new_'+string(im_name);
+    %filename='.\output\new_'+string(im_name);
     %filename=string(pwd)+'\output\new_'+string(im_name);
     %if exist(filename, 'file')
     %    delete(filename)        
