@@ -1,4 +1,5 @@
-papers\*
-train\*
-val\*
-val_degraded\*
+papers/*
+train/*
+val/*
+val_degraded/*
+train.tar

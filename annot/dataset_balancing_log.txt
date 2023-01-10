@@ -1,0 +1,268 @@
+Cleaning  4323  images . . .
+
+
+Found 235 validated image filenames.                                         for class              213               creating  265  augmented images
+Found 395 validated image filenames.                                         for class              214               creating  105  augmented images
+Found 318 validated image filenames.                                         for class              216               creating  182  augmented images
+Found 369 validated image filenames.                                         for class              217               creating  131  augmented images
+Found 474 validated image filenames.                                         for class              220               creating  26   augmented images
+Found 341 validated image filenames.                                         for class              221               creating  159  augmented images
+Found 350 validated image filenames.                                         for class              222               creating  150  augmented images
+Found 416 validated image filenames.                                         for class              223               creating  84   augmented images
+Found 376 validated image filenames.                                         for class              224               creating  124  augmented images
+Found 397 validated image filenames.                                         for class              226               creating  103  augmented images
+Found 453 validated image filenames.                                         for class              228               creating  47   augmented images
+Found 440 validated image filenames.                                         for class              229               creating  60   augmented images
+Found 357 validated image filenames.                                         for class              230               creating  143  augmented images
+Found 424 validated image filenames.                                         for class              231               creating  76   augmented images
+Found 382 validated image filenames.                                         for class              233               creating  118  augmented images
+Found 374 validated image filenames.                                         for class              234               creating  126  augmented images
+Found 413 validated image filenames.                                         for class              235               creating  87   augmented images
+Found 472 validated image filenames.                                         for class              236               creating  28   augmented images
+Found 235 validated image filenames.                                         for class              238               creating  265  augmented images
+Found 179 validated image filenames.                                         for class              239               creating  321  augmented images
+Found 424 validated image filenames.                                         for class              241               creating  76   augmented images
+Found 375 validated image filenames.                                         for class              242               creating  125  augmented images
+Found 378 validated image filenames.                                         for class              243               creating  122  augmented images
+Found 483 validated image filenames.                                         for class              244               creating  17   augmented images
+Found 300 validated image filenames.                                         for class              245               creating  200  augmented images
+Found 311 validated image filenames.                                         for class              247               creating  189  augmented images
+Found 307 validated image filenames.                                         for class              248               creating  193  augmented images
+Found 403 validated image filenames.                                         for class              249               creating  97   augmented images
+Found 454 validated image filenames.                                         for class              250               creating  46   augmented images
+Found 470 validated image filenames.                                         for class               58               creating  30   augmented images
+Found 497 validated image filenames.                                         for class              101               creating   3   augmented images
+Found 460 validated image filenames.                                         for class              199               creating  40   augmented images
+Found 421 validated image filenames.                                         for class              166               creating  79   augmented images
+Found 359 validated image filenames.                                         for class               86               creating  141  augmented images
+Found 429 validated image filenames.                                         for class              100               creating  71   augmented images
+Found 405 validated image filenames.                                         for class               71               creating  95   augmented images
+Found 434 validated image filenames.                                         for class              113               creating  66   augmented images
+Found 375 validated image filenames.                                         for class              202               creating  125  augmented images
+Found 432 validated image filenames.                                         for class               40               creating  68   augmented images
+Found 450 validated image filenames.                                         for class               14               creating  50   augmented images
+Found 320 validated image filenames.                                         for class               10               creating  180  augmented images
+Found 496 validated image filenames.                                         for class               88               creating   4   augmented images
+Found 497 validated image filenames.                                         for class               47               creating   3   augmented images
+Found 445 validated image filenames.                                         for class               9                creating  55   augmented images
+Found 445 validated image filenames.                                         for class              195               creating  55   augmented images
+Found 405 validated image filenames.                                         for class              188               creating  95   augmented images
+Found 437 validated image filenames.                                         for class              135               creating  63   augmented images
+Found 395 validated image filenames.                                         for class               31               creating  105  augmented images
+Found 430 validated image filenames.                                         for class               84               creating  70   augmented images
+Found 494 validated image filenames.                                         for class              203               creating   6   augmented images
+Found 363 validated image filenames.                                         for class              121               creating  137  augmented images
+Found 467 validated image filenames.                                         for class               46               creating  33   augmented images
+Found 459 validated image filenames.                                         for class               36               creating  41   augmented images
+Found 455 validated image filenames.                                         for class              167               creating  45   augmented images
+Found 453 validated image filenames.                                         for class              192               creating  47   augmented images
+Found 487 validated image filenames.                                         for class               53               creating  13   augmented images
+Found 385 validated image filenames.                                         for class               44               creating  115  augmented images
+Found 470 validated image filenames.                                         for class               92               creating  30   augmented images
+Found 488 validated image filenames.                                         for class               30               creating  12   augmented images
+Found 456 validated image filenames.                                         for class               17               creating  44   augmented images
+Found 355 validated image filenames.                                         for class               24               creating  145  augmented images
+Found 395 validated image filenames.                                         for class               7                creating  105  augmented images
+Found 415 validated image filenames.                                         for class               13               creating  85   augmented images
+Found 394 validated image filenames.                                         for class               25               creating  106  augmented images
+Found 415 validated image filenames.                                         for class               22               creating  85   augmented images
+Found 397 validated image filenames.                                         for class               87               creating  103  augmented images
+Found 330 validated image filenames.                                         for class              200               creating  170  augmented images
+Found 374 validated image filenames.                                         for class               80               creating  126  augmented images
+Found 428 validated image filenames.                                         for class              143               creating  72   augmented images
+Found 356 validated image filenames.                                         for class               33               creating  144  augmented images
+Found 444 validated image filenames.                                         for class              165               creating  56   augmented images
+Found 468 validated image filenames.                                         for class               26               creating  32   augmented images
+Found 426 validated image filenames.                                         for class               66               creating  74   augmented images
+Found 380 validated image filenames.                                         for class               95               creating  120  augmented images
+Found 474 validated image filenames.                                         for class              193               creating  26   augmented images
+Found 473 validated image filenames.                                         for class               72               creating  27   augmented images
+Found 423 validated image filenames.                                         for class              127               creating  77   augmented images
+Found 436 validated image filenames.                                         for class              146               creating  64   augmented images
+Found 338 validated image filenames.                                         for class              109               creating  162  augmented images
+Found 33 validated image filenames.                                         for class              162               creating  467  augmented images
+Found 260 validated image filenames.                                         for class              103               creating  240  augmented images
+Found 450 validated image filenames.                                         for class               4                creating  50   augmented images
+Found 418 validated image filenames.                                         for class              180               creating  82   augmented images
+Found 358 validated image filenames.                                         for class               68               creating  142  augmented images
+Found 463 validated image filenames.                                         for class              136               creating  37   augmented images
+Found 389 validated image filenames.                                         for class              208               creating  111  augmented images
+Found 392 validated image filenames.                                         for class              190               creating  108  augmented images
+Found 346 validated image filenames.                                         for class              194               creating  154  augmented images
+Found 466 validated image filenames.                                         for class              178               creating  34   augmented images
+Found 454 validated image filenames.                                         for class              144               creating  46   augmented images
+Found 390 validated image filenames.                                         for class              134               creating  110  augmented images
+Found 307 validated image filenames.                                         for class              153               creating  193  augmented images
+Found 425 validated image filenames.                                         for class              125               creating  75   augmented images
+Found 253 validated image filenames.                                         for class              149               creating  247  augmented images
+Found 464 validated image filenames.                                         for class               43               creating  36   augmented images
+Found 402 validated image filenames.                                         for class              210               creating  98   augmented images
+Found 22 validated image filenames.                                         for class              116               creating  478  augmented images
+Found 437 validated image filenames.                                         for class              151               creating  63   augmented images
+Found 455 validated image filenames.                                         for class              173               creating  45   augmented images
+Found 406 validated image filenames.                                         for class               18               creating  94   augmented images
+Found 498 validated image filenames.                                         for class               28               creating   2   augmented images
+Found 433 validated image filenames.                                         for class               54               creating  67   augmented images
+Found 460 validated image filenames.                                         for class               77               creating  40   augmented images
+Found 430 validated image filenames.                                         for class               69               creating  70   augmented images
+Found 445 validated image filenames.                                         for class               85               creating  55   augmented images
+Found 472 validated image filenames.                                         for class              105               creating  28   augmented images
+Found 490 validated image filenames.                                         for class              181               creating  10   augmented images
+Found 376 validated image filenames.                                         for class              170               creating  124  augmented images
+Found 490 validated image filenames.                                         for class              107               creating  10   augmented images
+Found 439 validated image filenames.                                         for class              148               creating  61   augmented images
+Found 435 validated image filenames.                                         for class               2                creating  65   augmented images
+Found 342 validated image filenames.                                         for class               37               creating  158  augmented images
+Found 407 validated image filenames.                                         for class              108               creating  93   augmented images
+Found 458 validated image filenames.                                         for class               63               creating  42   augmented images
+Found 496 validated image filenames.                                         for class              191               creating   4   augmented images
+Found 450 validated image filenames.                                         for class              179               creating  50   augmented images
+Found 338 validated image filenames.                                         for class              204               creating  162  augmented images
+Found 478 validated image filenames.                                         for class              106               creating  22   augmented images
+Found 450 validated image filenames.                                         for class               56               creating  50   augmented images
+Found 430 validated image filenames.                                         for class              205               creating  70   augmented images
+Found 459 validated image filenames.                                         for class               6                creating  41   augmented images
+Found 326 validated image filenames.                                         for class               15               creating  174  augmented images
+Found 495 validated image filenames.                                         for class               81               creating   5   augmented images
+Found 317 validated image filenames.                                         for class              209               creating  183  augmented images
+Found 423 validated image filenames.                                         for class              133               creating  77   augmented images
+Found 489 validated image filenames.                                         for class              163               creating  11   augmented images
+Found 409 validated image filenames.                                         for class              187               creating  91   augmented images
+Found 484 validated image filenames.                                         for class               64               creating  16   augmented images
+Found 417 validated image filenames.                                         for class               5                creating  83   augmented images
+Found 426 validated image filenames.                                         for class              184               creating  74   augmented images
+Found 428 validated image filenames.                                         for class              110               creating  72   augmented images
+Found 369 validated image filenames.                                         for class              128               creating  131  augmented images
+Found 316 validated image filenames.                                         for class              183               creating  184  augmented images
+Found 343 validated image filenames.                                         for class              186               creating  157  augmented images
+Found 421 validated image filenames.                                         for class               61               creating  79   augmented images
+Found 393 validated image filenames.                                         for class              131               creating  107  augmented images
+Found 396 validated image filenames.                                         for class               50               creating  104  augmented images
+Found 461 validated image filenames.                                         for class              122               creating  39   augmented images
+Found 407 validated image filenames.                                         for class               48               creating  93   augmented images
+Found 405 validated image filenames.                                         for class               65               creating  95   augmented images
+Found 412 validated image filenames.                                         for class               97               creating  88   augmented images
+Found 441 validated image filenames.                                         for class              207               creating  59   augmented images
+Found 231 validated image filenames.                                         for class              159               creating  269  augmented images
+Found 289 validated image filenames.                                         for class               83               creating  211  augmented images
+Found 453 validated image filenames.                                         for class               20               creating  47   augmented images
+Found 457 validated image filenames.                                         for class              104               creating  43   augmented images
+Found 384 validated image filenames.                                         for class              154               creating  116  augmented images
+Found 482 validated image filenames.                                         for class               27               creating  18   augmented images
+Found 212 validated image filenames.                                         for class               99               creating  288  augmented images
+Found 353 validated image filenames.                                         for class               70               creating  147  augmented images
+Found 261 validated image filenames.                                         for class              164               creating  239  augmented images
+Found 440 validated image filenames.                                         for class               42               creating  60   augmented images
+Found 389 validated image filenames.                                         for class               78               creating  111  augmented images
+Found 354 validated image filenames.                                         for class               74               creating  146  augmented images
+Found 490 validated image filenames.                                         for class               32               creating  10   augmented images
+Found 374 validated image filenames.                                         for class               89               creating  126  augmented images
+Found 440 validated image filenames.                                         for class               21               creating  60   augmented images
+Found 417 validated image filenames.                                         for class               34               creating  83   augmented images
+Found 462 validated image filenames.                                         for class              132               creating  38   augmented images
+Found 499 validated image filenames.                                         for class               93               creating   1   augmented images
+Found 473 validated image filenames.                                         for class              114               creating  27   augmented images
+Found 310 validated image filenames.                                         for class              174               creating  190  augmented images
+
+Total Augmented images created=  15651
+
+
+
+520 images found                         for class              211               removing  20   images
+507 images found                         for class              212               removing   7   images
+558 images found                         for class              215               removing  58   images
+626 images found                         for class              218               removing  126  images
+613 images found                         for class              219               removing  113  images
+506 images found                         for class              225               removing   6   images
+606 images found                         for class              227               removing  106  images
+518 images found                         for class              232               removing  18   images
+563 images found                         for class              237               removing  63   images
+506 images found                         for class              240               removing   6   images
+540 images found                         for class              246               removing  40   images
+520 images found                         for class               94               removing  20   images
+608 images found                         for class               90               removing  108  images
+604 images found                         for class              140               removing  104  images
+559 images found                         for class              161               removing  59   images
+503 images found                         for class               67               removing   3   images
+541 images found                         for class              102               removing  41   images
+593 images found                         for class               98               removing  93   images
+557 images found                         for class               60               removing  57   images
+544 images found                         for class              196               removing  44   images
+615 images found                         for class              117               removing  115  images
+504 images found                         for class              156               removing   4   images
+506 images found                         for class               16               removing   6   images
+611 images found                         for class              119               removing  111  images
+593 images found                         for class               57               removing  93   images
+515 images found                         for class               91               removing  15   images
+502 images found                         for class               51               removing   2   images
+524 images found                         for class               73               removing  24   images
+592 images found                         for class               79               removing  92   images
+503 images found                         for class              171               removing   3   images
+586 images found                         for class              169               removing  86   images
+578 images found                         for class              172               removing  78   images
+602 images found                         for class               82               removing  102  images
+552 images found                         for class              150               removing  52   images
+551 images found                         for class               62               removing  51   images
+605 images found                         for class               38               removing  105  images
+605 images found                         for class               12               removing  105  images
+574 images found                         for class               49               removing  74   images
+578 images found                         for class               59               removing  78   images
+562 images found                         for class              118               removing  62   images
+586 images found                         for class              197               removing  86   images
+536 images found                         for class              124               removing  36   images
+543 images found                         for class               45               removing  43   images
+515 images found                         for class              157               removing  15   images
+523 images found                         for class              182               removing  23   images
+530 images found                         for class               76               removing  30   images
+512 images found                         for class              160               removing  12   images
+508 images found                         for class               96               removing   8   images
+549 images found                         for class               52               removing  49   images
+520 images found                         for class              130               removing  20   images
+505 images found                         for class              152               removing   5   images
+512 images found                         for class              137               removing  12   images
+520 images found                         for class              168               removing  20   images
+629 images found                         for class              155               removing  129  images
+582 images found                         for class               39               removing  82   images
+598 images found                         for class              141               removing  98   images
+621 images found                         for class               0                removing  121  images
+537 images found                         for class               55               removing  37   images
+544 images found                         for class              158               removing  44   images
+517 images found                         for class              176               removing  17   images
+567 images found                         for class               3                removing  67   images
+508 images found                         for class              145               removing   8   images
+537 images found                         for class               75               removing  37   images
+512 images found                         for class               23               removing  12   images
+575 images found                         for class              115               removing  75   images
+565 images found                         for class              129               removing  65   images
+572 images found                         for class               11               removing  72   images
+520 images found                         for class              175               removing  20   images
+558 images found                         for class              120               removing  58   images
+511 images found                         for class              111               removing  11   images
+538 images found                         for class              138               removing  38   images
+561 images found                         for class              139               removing  61   images
+585 images found                         for class               8                removing  85   images
+579 images found                         for class              147               removing  79   images
+531 images found                         for class               1                removing  31   images
+534 images found                         for class               19               removing  34   images
+513 images found                         for class              177               removing  13   images
+513 images found                         for class              206               removing  13   images
+526 images found                         for class              185               removing  26   images
+585 images found                         for class              198               removing  85   images
+502 images found                         for class              126               removing   2   images
+520 images found                         for class              112               removing  20   images
+510 images found                         for class               35               removing  10   images
+532 images found                         for class              142               removing  32   images
+512 images found                         for class              189               removing  12   images
+536 images found                         for class               29               removing  36   images
+541 images found                         for class              201               removing  41   images
+525 images found                         for class              123               removing  25   images
+
+Total images removed=  4305
+
+
+
+Images before execution:  118475
+Images after cleaning:  114154
+Images after oversampling:  129805
+Final images count:  125500
+        [Expected:  125500 ]
