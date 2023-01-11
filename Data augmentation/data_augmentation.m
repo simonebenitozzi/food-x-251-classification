@@ -11,7 +11,7 @@ data_val_degraded=sortrows(data_val_degraded,'class','ascend');
 
 
 %% recupero lista immagini train set
-train_data_files = importdata('..\annot\train_clean_info.csv');
+train_data_files = importdata('..\annot\train_balanced_info.csv');
 test_data_files = importdata('..\annot\val_info.csv');
 N_TRAIN = size(train_data_files.data,1);
 %N_TRAIN = 20;
@@ -74,6 +74,7 @@ if ~exist('new_train_set', 'dir')
    mkdir('new_train_set');
 end
 
+tic
 count=0;
 for ii=1:251 %numero di classi
     testo="Classe: " + ii;
@@ -92,7 +93,7 @@ for ii=1:251 %numero di classi
         else
             index_test=u_test(modulo);
         end
-        filename=string('..\train\train_set\'+string(data_train{index_train,1}));
+        filename=string('..\train\train_set_balanced\'+string(data_train{index_train,1}));
         im=imread(filename);
         sigma_value=data_val_degraded{index_test,2};
         wR=data_val_degraded{index_test,3};
@@ -112,7 +113,7 @@ for ii=1:251 %numero di classi
         imwrite(im,filename);     
     end
 end
-
+toc
 
 
 
