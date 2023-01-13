@@ -1,5 +1,6 @@
 papers/*
 train/*
+train_tmp/*
 val/*
 val_degraded/*
 train.tar
