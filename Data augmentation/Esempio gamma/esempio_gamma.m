@@ -2,6 +2,7 @@ clear all
 clc
 close all
 rng(42)
+addpath(genpath(pwd))
 
 %% prova stima qualità immagini con gamma correction
 im1 = imread('..\..\val\val_set\val_000473.jpg');

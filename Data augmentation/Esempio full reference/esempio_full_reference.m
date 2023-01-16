@@ -2,12 +2,12 @@ clear all
 clc
 close all
 rng(42)
-addpath('..\');
+addpath(genpath(pwd))
 
 
 %% stima qualità immagini con PSNR
-im = imread('..\val\val_set\val_010326.jpg');
-im_deg = imread('..\val_degraded\val_set_degraded\val_010326.jpg');
+im = imread('..\..\val\val_set\val_010326.jpg');
+im_deg = imread('..\..\val_degraded\val_set_degraded\val_010326.jpg');
 
 [im_deg_new,im_deg,sigma]=trova_filtro_gaussiano(im,im_deg,1);
 [im_deg_new]=applica_filtro_gaussiano(im,sigma);

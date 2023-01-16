@@ -2,9 +2,10 @@ clear all
 clc
 close all
 rng(42)
+addpath(genpath(pwd))
 
 %% prima verifica rumore salt and pepper e rumore gaussiano
-im1 = imread('G:\Progetto VIPM\val_degraded\val_set_degraded\val_000473.jpg');
+im1 = imread('..\..\val_degraded\val_set_degraded\val_000473.jpg');
 im1 = im2double(im1);
 
 % salt and pepper dovrebbe essere risolto con filtro mediano
@@ -20,7 +21,7 @@ h1 = histogram(im1);
 
 
 %% visualizzazione tipici istogrammi rumore salt and pepper e rumore gaussiano
-im0 = imread('G:\Progetto VIPM\val\val_set\val_000473.jpg');
+im0 = imread('..\..\val\val_set\val_000473.jpg');
 im0 = im2double(im0);
 
 % rumore salt and pepper

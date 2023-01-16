@@ -2,7 +2,7 @@ clear all
 clc
 close all
 rng(42)
-addpath('..\');
+addpath(genpath(pwd))
 
 
 %% prova stima qualità immagini con e senza valore di esposizione

@@ -3,7 +3,7 @@ function [im_deg_new,im_deg,best_sat] = trova_saturazione(im_deg_new,im_deg,qual
     if quality_metric==0
         BRI=[];
         sat=[];
-        for i=-0.3:0.1:0.3
+        for i=-0.3:0.01:0.3
             im_hsv=rgb2hsv(im_deg_new);
             im_s=im_hsv(:,:,2);
             im_s=im_s+i;
@@ -27,7 +27,7 @@ function [im_deg_new,im_deg,best_sat] = trova_saturazione(im_deg_new,im_deg,qual
     elseif quality_metric==1
         PSNR=[];
         sat=[];
-        for i=-0.3:0.1:0.3
+        for i=-0.3:0.01:0.3
             im_hsv=rgb2hsv(im_deg_new);
             im_s=im_hsv(:,:,2);
             im_s=im_s+i;
@@ -49,7 +49,7 @@ function [im_deg_new,im_deg,best_sat] = trova_saturazione(im_deg_new,im_deg,qual
     elseif quality_metric==2
         SSIM=[];
         sat=[];
-        for i=-0.3:0.1:0.3
+        for i=-0.3:0.01:0.3
             im_hsv=rgb2hsv(im_deg_new);
             im_s=im_hsv(:,:,2);
             im_s=im_s+i;
