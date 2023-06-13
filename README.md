@@ -4,7 +4,7 @@ This repository contains the code and resources for the FoodX-251 project, which
 
 ## Project Description
 
-The project is based on the FoodX-251 dataset [paper], and the team is required to develop an original project using the entire dataset or a subset of it. The choice of the subset must be justified. The main components of the project include:
+The project is based on the FoodX-251 dataset, and the team is required to develop an original project using the entire dataset or a subset of it. The choice of the subset must be justified. The main components of the project include:
 
 1. Classification of the validation set into the 251 classes defined in the dataset (fine-grained food classification).
 2. Classification of the degraded validation set into the 251 classes defined in the dataset (fine-grained food classification).
